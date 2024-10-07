@@ -34,7 +34,7 @@ import Error from "./component/Error";
                     <Route path="/Jewelery" element={<Jewelery/>}/>
                     <Route path="/Men" element={<Men/>}/>
                     <Route path="/Women" element={<Women/>}/>
-                    <Route path="*" element={<Error/>} />
+              
 
 
                 </Routes>
