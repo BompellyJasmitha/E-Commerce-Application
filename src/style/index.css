@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* border:5px solid red; */
+}
+
+
+/* Login---->>>>>>> */
+
+#mainImageDiv{
+    width:100%;
+    height: 100vh;
+    background: url("https://media.istockphoto.com/id/1129661826/photo/wood-texture-table-top-with-blur-light-gold-bokeh-in-cafe-restaurant-background-for-montage.jpg?s=2048x2048&w=is&k=20&c=N_F4Rveb_E9caxqQiSLfOwLSn5d6LS-uM4HTgNJJZiw=")no-repeat center/cover;
+    overflow: hidden;
+}
+
+#ImagesDiv{
+    width:50%;
+    height:600px;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    /* border: 5px solid red; */
+    background-color: rgb(177, 231, 231);
+    position: relative;
+    left:130px;
+    top: 50px;
+    transition-duration: 1ms;
+}
+#redirect{
+    color:black
+}
+
+#ImagesDiv img{
+    width:100%;
+    height:600px;
+
+
+}
+
+#loginDiv{
+    width:25%;
+    height:600px;
+    position: fixed;
+    left: 900px;
+    bottom:45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0px 10px 10px 0px;
+    align-items: center;
+    background-color: antiquewhite;
+    font-size: 20px; 
+    font-family: sans-serif;
+    font-weight: 600;
+
+}
+#loginDiv h1,hr{
+    width: 270px;
+    position: relative;
+    bottom: 100px;
+    left:30px
+    
+}
+
+#loginDiv input{
+    width: 330px;
+    height:35px;
+    margin: 10px;
+    position:relative;
+    bottom:50px;
+    padding: 10px 20px;
+}
+#loginDiv input[type="submit"]{
+    width:200px;
+    height:40px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 20px;
+    position:relative;
+    left:55px;
+
+}
+
+#NavDiv{
+    width:100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    font-size: 16px;
+    font-family:sans-serif;
+    background-color: rgb(113, 110, 110);
+    font-weight: 400;
+    box-shadow: 1px 1px 3px  rgb(251, 246, 246);
+    color:white;
+}
+
+#NavDiv img{
+    width:100px;
+    
+}
+#NavDiv ul{
+    
+    display: flex;
+    margin: 40px 390px 20px 50px ;
+}
+#NavDiv li{
+    width:100px;
+    margin: 0px 1px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#NavDiv input[type="search"]{
+    width:370px;
+    height:50px;
+    cursor: pointer;
+    position:relative;
+    bottom:15px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px rgb(118, 17, 17);
+    border:none;
+    color:rgb(118, 17, 17);
+    /* background-color: red; */
+}
+
+
+
+
+/* HOME DIV----------------->>>>>>>>>>>>>>>> */
+
+#homeDiv{
+    width: 100%;
+    height:95vh;
+    background-color: black;
+}
+
+#homeDivPart1{
+    width:100%;
+    height:90vh;
+    filter: brightness(80%);
+    z-index:-1;
+    background: url("https://static.wixstatic.com/media/c837a6_d87ad81168b34e288c5309f175b8a3e0~mv2.jpg/v1/fill/w_1163,h_1029,fp_0.65_0.67,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_d87ad81168b34e288c5309f175b8a3e0~mv2.jpg")no-repeat center/cover;
+}
+.text{
+    width:690px;
+    position: relative;
+    top:170px;
+    left:60px;
+    color:rgb(246, 242, 238);
+    z-index: 1;
+    font-size: 300%;
+}
+
+#imageDiv{
+    width:100%;
+    max-height:400vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px 50px;
+    justify-content: space-around;
+    background-color: black;
+    
+}
+
+#imageDiv img{
+    width:300px;
+    height:300px;
+    border:1px solid rgb(118, 17, 17);
+}
+
+#HomeCard{
+    width:300px;
+    height:400px;
+    margin:20px;
+}
+#HomeCard>h1,p{
+    color:antiquewhite;
+    font-size: 100%;
+}
+#HomeCard p{
+    margin:20px 0px;
+}
+#errorbutton{
+    height: 55px;
+    width:300px;
+    position: relative;
+    bottom:113px;
+    left:960px;
+    background-color: black;
+    border:1px solid #ffffff;
+    color: #ffffff;
+}
+#errorimg{
+    width:100%;
+    height: 100vh;
+}
