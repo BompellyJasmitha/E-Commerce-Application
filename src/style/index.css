@@ -187,14 +187,40 @@
 #errorbutton{
     height: 55px;
     width:300px;
+    color: black;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 5px;
     position: relative;
-    bottom:113px;
-    left:960px;
+    left:990px;
+    bottom:110px;
+}
+#errorbutton:hover{
+    outline: 1px solid white;
+    color:white;
     background-color: black;
-    border:1px solid #ffffff;
-    color: #ffffff;
+
 }
 #errorimg{
     width:100%;
-    height: 100vh;
+    height: 90vh;
+}
+
+/* products button */
+
+.productbutton{
+
+    height: 10%;
+    width:100%;
+    color: black;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 50px 0px;
+   
+}
+.productbutton:hover{
+    outline: 1px solid white;
+    color:white;
+    background-color: black;
+
 }

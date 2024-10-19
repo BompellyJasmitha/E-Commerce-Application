@@ -4,7 +4,7 @@ export default function Error(){
     let nav=useNavigate()
  
     return (<>
-            <div>
+            <div style={{height:'80vh',}}>
                 <img id="errorimg" src="https://hummingweb.com.au/wp-content/uploads/2023/03/404-page-not-found.jpg" alt="" />
                 <button onClick={()=>nav("/Home")} id="errorbutton">GO BACK HOME</button>
             </div>

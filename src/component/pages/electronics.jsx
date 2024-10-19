@@ -2,11 +2,13 @@ import React from "react";
 import {useEffect,useState} from "react";
 import { Nav } from "./nav";
 import "../../style/subCards.css"
+import { useNavigate } from "react-router-dom";
 
 
 export default function Electronics(){
     
     let [api,setapi]=useState([]);
+    let navigation=useNavigate()
 
     useEffect(()=>{
         fetch(`https://fakestoreapi.com/products`) 
@@ -26,9 +28,9 @@ export default function Electronics(){
             <div id="EleproductseDiv">
 
                  {
-                     api.map(x=>
+                     api.map((x,k1)=>
                          {return(
-                         <div id="Elecards">
+                         <div key={k1} id="Elecards" >
 
                          <img src={x.image}></img>
                          <div id="Eledetails">
@@ -37,7 +39,7 @@ export default function Electronics(){
                             <h2 id="rate">{x.rating.rate}⭐</h2>
                             <h3 id="price">price :💲{x.price}</h3>
 
-                            <button>Add To Cart</button>
+                            <button  onClick={()=>navigation("/Product" ,{state:{x}})}>Add To Cart</button>
                             <button>BUY NOW</button>
                          </div>
 

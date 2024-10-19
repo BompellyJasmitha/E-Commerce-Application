@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import { action } from '@storybook/addon-actions';
 import "../style/index.css";
 
 

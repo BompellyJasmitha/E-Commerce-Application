@@ -2,6 +2,7 @@ import React from "react";
 import {useEffect,useState} from "react";
 import { Nav } from "./nav";
 import "../../style/subCards.css"
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -9,6 +10,7 @@ import "../../style/subCards.css"
 export default function Women(){
     
     let [api,setapi]=useState([]);
+    let navigate=useNavigate();
 
     useEffect(()=>{
         fetch(`https://fakestoreapi.com/products`) 
@@ -16,7 +18,7 @@ export default function Women(){
         .then( x=>{setapi(x.filter(x=>14<x.id && x.id<21))});    
     },[])                                                                   
 
-console.log(api)
+// console.log(api)
         
        
     return(<>
@@ -28,9 +30,9 @@ console.log(api)
             <div id="EleproductseDiv">
 
                  {
-                     api.map(x=>
+                     api.map((x,k1)=>
                          {return(
-                         <div id="Elecards">
+                         <div key={k1} id="Elecards">
 
                          <img src={x.image}></img>
                          <div id="Eledetails">
@@ -41,7 +43,7 @@ console.log(api)
                             <h2 id="rate">{x.rating.rate}⭐</h2>
                             <h3 id="price">price :💲{x.price}</h3>
 
-                            <button>Add To Cart</button>
+                            <button onClick={()=>navigate("/Product",{state:{x}})}>Add To Cart</button>
                             <button>BUY NOW</button>
                          </div>
 

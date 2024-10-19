@@ -9,7 +9,9 @@ import Electronics from "./component/pages/electronics";
 import Jewelery from "./component/pages/jewelery"
 import Men from "./component/pages/men";
 import Women from "./component/pages/women";
+import Product from "./component/pages/product";
 import Error from "./component/Error";
+
 
  export default function App(){
 
@@ -23,10 +25,8 @@ import Error from "./component/Error";
                     <Route path="/Register" element={<Register/>} />
                     <Route path="/Login" element={<Login/>} />
                     <Route path="/Nav" element={<Nav/>} />    
+                    <Route path="*" element={<Error/>} />    
 
-                </Routes>
-                
-                <Routes>
                 
                     
                     <Route path="/Home" element={<Home/>} />
@@ -34,6 +34,7 @@ import Error from "./component/Error";
                     <Route path="/Jewelery" element={<Jewelery/>}/>
                     <Route path="/Men" element={<Men/>}/>
                     <Route path="/Women" element={<Women/>}/>
+                    <Route path="/Product" element={<Product/>}/>
               
 
 
